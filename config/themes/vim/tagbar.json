@@ -5,11 +5,11 @@
 			{
 				"module" : "linepower.segments",
 				"name": "tagbar_statusline_segment",
-				"draw_soft_divider": true
+				"draw_soft_divider": false
 			},
 			{
 				"type": "string",
-				"highlight_group": ["background"],
+				"highlight_group": ["explore"],
 				"draw_soft_divider": false,
 				"draw_hard_divider": false,
 				"width": "auto"
