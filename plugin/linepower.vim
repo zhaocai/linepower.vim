@@ -10,8 +10,9 @@
 "                  Released under current GPL license.
 " =============== ============================================================
 
-let s:linepower_pycmd = substitute(get(g:, 'powerline_pycmd', has('python') ? 'py' : 'py3'),
-    \'\v^(py)%[thon](3?)$', '\1\2', '')
+let s:linepower_pycmd = substitute(
+    \ get(g:, 'powerline_pycmd', has('python') ? 'py' : 'py3'),
+    \ '\v^(py)%[thon](3?)$', '\1\2', '')
 
 let s:linepower_pyeval = get(g:, 'powerline_pyeval', s:linepower_pycmd.'eval')
 
@@ -33,3 +34,10 @@ else
     let g:powerline_config_overrides.common.paths = [g:linepower_python_path]
 endif
 
+
+
+
+" -=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-
+" Unite:
+" -=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-
+let g:unite_force_overwrite_statusline = 0

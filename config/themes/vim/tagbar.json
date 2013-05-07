@@ -1,10 +1,11 @@
 {
+	"default_module": "powerline.segments.vim",
 	"segments": {
 		"left": [
 			{
-				"type": "string",
-				"contents": "Tagbar",
-				"highlight_group": ["file_name"]
+				"module" : "linepower.segments",
+				"name": "tagbar_statusline_segment",
+				"draw_soft_divider": true
 			},
 			{
 				"type": "string",
@@ -13,6 +14,17 @@
 				"draw_hard_divider": false,
 				"width": "auto"
 			}
+
+		],
+		"right": [
+			{
+				"type": "string",
+				"contents": "Tagbar",
+				"highlight_group": ["file_name"],
+				"draw_soft_divider": true
+			}
 		]
+
+
 	}
 }

@@ -26,7 +26,13 @@ def vim_func_segment(pl, func_name, *args):
 def tagbar_currenttag_segment(pl):
     '''Return the tagbar current tag
     '''
-    return vim_func_segment(pl, 'tagbar#currenttag', '%s', '')
+    return vim_func_segment(pl, 'tagbar#currenttag', '%s', '', 'f')
+
+
+def tagbar_statusline_segment(pl):
+    '''Return the tagbar statusline
+    '''
+    return vim_func_segment(pl, 'TagbarGenerateStatusline')
 
 
 @window_cached

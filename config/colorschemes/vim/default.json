@@ -33,12 +33,14 @@
 		"ruby_version": { "fg": "brightyellow", "bg": "gray2", "attr": ["bold"] },
 		"tagbar_currenttag_segment": { "fg": "gray7", "bg": "gray2" },
 		"asynccommand_segment": { "fg": "brightyellow", "bg": "gray2" },
+		"tagbar_statusline_segment": { "fg": "darkorange", "bg": "gray2" },
 		"unite_segment": { "fg": "brightyellow", "bg": "gray2" }
 	},
 	"mode_translations": {
 		"nc": {
 			"colors": {
 				"brightyellow": "darkorange",
+				"darkorange": "brightyellow",
 				"brightestred": "darkred",
 				"gray0": "gray0",
 				"gray1": "gray0",
