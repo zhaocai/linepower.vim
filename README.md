@@ -25,17 +25,17 @@
 
 3. Install [linepower][linepower] like any other vim plugins. For Example,  
 
-    - *neobundle*:
+- *neobundle*:
 
-    ```vim
+```vim
     NeoBundle 'zhaocai/linepower.vim'
-    ```
+```
 
-    - *vundle*:
+- *vundle*:
 
-    ```vim
+```vim
     Bundle 'zhaocai/linepower.vim'
-    ```
+```
 
 [powerline]: https://github.com/Lokaltog/powerline
 [linepower]: https://github.com/zhaocai/linepower.vim
