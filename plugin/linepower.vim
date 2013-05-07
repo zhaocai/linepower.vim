@@ -1,3 +1,14 @@
+" =============== ============================================================
+" Name           : linepower
+" Synopsis       : powerline vim local themes
+" Author         : Zhao Cai <caizhaoff@gmail.com>
+" HomePage       : https://github.com/zhaocai/linepower.vim
+" Date Created   : Tue 07 May 2013 04:05:45 AM EDT
+" Last Modified  : Tue 07 May 2013 04:05:45 AM EDT
+" Tag            : [ vim, statusline ]
+" Copyright      : (c) 2013 by Zhao Cai,
+"                  Released under current GPL license.
+" =============== ============================================================
 
 let s:linepower_pycmd = substitute(get(g:, 'powerline_pycmd', has('python') ? 'py' : 'py3'),
     \'\v^(py)%[thon](3?)$', '\1\2', '')
