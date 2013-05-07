@@ -3,7 +3,7 @@
 
 from subprocess import Popen, PIPE
 from powerline.bindings.vim import vim_get_func
-# from powerline.segments.vim import window_cached
+from powerline.segments.vim import window_cached
 # from powerline.theme import requires_segment_info
 from powerline.lib.threaded import ThreadedSegment, with_docstring
 
@@ -11,6 +11,9 @@ from powerline.lib.threaded import ThreadedSegment, with_docstring
 vim_func_exists = vim_get_func('exists', rettype=int)
 
 
+# -------------%<--------------
+# segment from vim functions
+# -------------%>--------------
 def vim_func_segment(pl, func_name, *args):
     if int(vim_func_exists('*' + func_name)) > 0:
         f = vim_get_func(func_name, rettype=str)
@@ -19,30 +22,37 @@ def vim_func_segment(pl, func_name, *args):
         return None
 
 
+@window_cached
 def tagbar_currenttag_segment(pl):
     '''Return the tagbar current tag
     '''
     return vim_func_segment(pl, 'tagbar#currenttag', '%s', '')
 
 
+@window_cached
 def asynccommand_segment(pl):
     '''Return the asynccommand statusline
     '''
     return vim_func_segment(pl, 'asynccommand#statusline')
 
 
+@window_cached
 def syntastic_segment(pl):
     '''Return the syntastic statusline flag
     '''
     return vim_func_segment(pl, 'SyntasticStatuslineFlag')
 
 
+@window_cached
 def unite_segment(pl):
     '''Return the unite.vim statusline
     '''
     return vim_func_segment(pl, 'unite#get_status_string')
 
 
+# -------------%<-------------
+# ruby (rvm, rbenv) sgements
+# -------------%>-------------
 class RVMSegment(ThreadedSegment):
     interval = 10
 
