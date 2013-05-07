@@ -1,15 +1,91 @@
-from powerline.segments.vim import window_cached, vim_funcs
+#! /usr/bin/env python -3
+# -*- coding: utf-8 -*-
 
-from powerline.bindings.vim import vim_get_func, getbufvar
-from powerline.theme import requires_segment_info
+from subprocess import Popen, PIPE
+from powerline.bindings.vim import vim_get_func
+# from powerline.segments.vim import window_cached
+# from powerline.theme import requires_segment_info
+from powerline.lib.threaded import ThreadedSegment, with_docstring
 
 
-@window_cached
+vim_func_exists = vim_get_func('exists', rettype=int)
+
+
+def vim_func_segment(pl, func_name, *args):
+    if int(vim_func_exists('*' + func_name)) > 0:
+        f = vim_get_func(func_name, rettype=str)
+        return str(f(*args))
+    else:
+        return None
+
+
 def tagbar_currenttag_segment(pl):
     '''Return the tagbar current tag
     '''
-    if int(vim_funcs['exists']('*tagbar#currenttag')) > 0:
-        stl_func = vim_get_func('tagbar#currenttag', rettype=str)
-        return str(stl_func('%s', ''))
-    else:
-        return None
+    return vim_func_segment(pl, 'tagbar#currenttag', '%s', '')
+
+
+def asynccommand_segment(pl):
+    '''Return the asynccommand statusline
+    '''
+    return vim_func_segment(pl, 'asynccommand#statusline')
+
+
+def syntastic_segment(pl):
+    '''Return the syntastic statusline flag
+    '''
+    return vim_func_segment(pl, 'SyntasticStatuslineFlag')
+
+
+def unite_segment(pl):
+    '''Return the unite.vim statusline
+    '''
+    return vim_func_segment(pl, 'unite#get_status_string')
+
+
+class RVMSegment(ThreadedSegment):
+    interval = 10
+
+    def update(self, old_rvm_current):
+        try:
+            p = Popen(['rvm', 'current'],
+                      shell=False, stdout=PIPE, stderr=PIPE)
+            p.stderr.close()
+            return p.stdout.read().rstrip()
+        except OSError:
+            return None
+
+    def render(self, update_value, **kwargs):
+        return [{'contents': update_value,
+                 'highlight_group': ['ruby_version']}]
+
+
+rvm_current = with_docstring(RVMSegment(),
+                             '''Return the rvm current ruby name.
+
+Highlight groups used: ``ruby_version``.
+''')
+
+
+class RbEnvSegment(ThreadedSegment):
+    interval = 10
+
+    def update(self, old_rbenv_version):
+        try:
+            p = Popen(['rbenv', 'version'],
+                      shell=False, stdout=PIPE, stderr=PIPE)
+            p.stderr.close()
+            return p.stdout.read().split()[0]
+        except OSError:
+            return None
+
+    def render(self, update_value, **kwargs):
+        return [{'contents': update_value,
+                 'highlight_group': ['ruby_version']}]
+
+
+rbenv_version = with_docstring(RbEnvSegment(),
+                               '''Return the rbenv ruby version.
+
+Highlight groups used: ``ruby_version``.
+''')
