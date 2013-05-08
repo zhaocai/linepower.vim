@@ -17,14 +17,19 @@ You may fork it and add more local themes for your convenience.
 ## Included Local Themes
 
 1. unite.vim
-![unite normal]( http://d.pr/i/RtLV+ )
-![unite insert]( http://d.pr/i/OcyE+ )
+
+    ![unite normal]( http://d.pr/i/RtLV+ )
+    ![unite insert]( http://d.pr/i/OcyE+ )
 
 2. tagbar
-![tagbar]( http://d.pr/i/yrUk+ )
+
+    ![tagbar]( http://d.pr/i/yrUk+ )
 
 3. rvm/rbenv version
 4. syntastic
+
+    ![syntastic]( http://d.pr/i/tT0l+ )
+
 4. vimfiler
 5. asyncommand
 
