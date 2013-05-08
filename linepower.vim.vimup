@@ -1,5 +1,5 @@
 script_name: linepower.vim
-script_id: '4529'
+script_id: '4576'
 script_type: utility
 script_package: '{script_name}-{version}.zip'
 required_vim_version: '7.3'
@@ -16,27 +16,28 @@ detailed_description: |
   You may fork it and add more local themes for your convenience.
 
   ## Included Local Themes
-  unite.vim
-  tagbar
-  rvm/rbenv version
-  syntastic
-  vimfiler
-  asyncommand
+  
+  - unite.vim
+  - tagbar
+  - rvm/rbenv version
+  - syntastic
+  - vimfiler
+  - asyncommand
 
 
 install_details: |
-  http://zhaocai.github.io/GoldenView.Vim/
+  http://zhaocai.github.io/linepower.vim/
 
 versions:
 - '1.0.0': |
-  - 1 Major Enhancements
-      * add unite.vim local_theme
-  - 5 Minor Enhancements
-      * tweak local colors for tagbar and vimfiler
-      * tagbar statusline
-      * rake install/diff
-      * use @window_cached
-      * add config
-      
+   - 1 Major Enhancements
+       * add unite.vim local_theme
+   - 5 Minor Enhancements
+       * tweak local colors for tagbar and vimfiler
+       * tagbar statusline
+       * rake install/diff
+       * use @window_cached
+       * add config
+       
 # __END__
 # vim: filetype=yaml
