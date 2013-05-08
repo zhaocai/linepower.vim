@@ -25,7 +25,8 @@ exec s:linepower_pycmd "import vim, os, sys"
 exec s:linepower_pycmd "sys.path.append(vim.eval('g:linepower_python_path'))"
 
 if !exists('g:powerline_config_overrides')
-    let g:powerline_config_overrides = {}
+    let g:powerline_config_overrides = {'common' : {}}
+elseif !has_key(g:powerline_config_overrides, 'common')
     let g:powerline_config_overrides.common = {}
 endif
 
