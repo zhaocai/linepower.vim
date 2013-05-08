@@ -15,3 +15,7 @@ def unite(matcher_info):
 
 def vimfiler(matcher_info):
     return str(getbufvar(matcher_info['bufnr'], '&filetype')) == 'vimfiler'
+
+
+def vimshell(matcher_info):
+    return str(getbufvar(matcher_info['bufnr'], '&filetype')) == 'vimshell'

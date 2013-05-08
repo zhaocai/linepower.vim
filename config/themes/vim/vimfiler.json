@@ -1,10 +1,13 @@
 {
+	"default_module": "powerline.segments.vim",
 	"segments": {
 		"left": [
 			{
 				"type": "string",
 				"contents": "Vimfiler",
-				"highlight_group": ["explore"]
+				"highlight_group": ["file_name"],
+				"draw_soft_divider": true
+
 			},
 			{
 				"type": "string",
@@ -13,6 +16,16 @@
 				"draw_hard_divider": false,
 				"width": "auto"
 			}
+
+		],
+		"right": [
+			{
+				"module" : "linepower.segments",
+				"name": "vimfiler",
+				"draw_soft_divider": false
+			}
 		]
+
+
 	}
 }

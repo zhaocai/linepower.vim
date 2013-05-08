@@ -12,7 +12,7 @@ vim_func_exists = vim_get_func('exists', rettype=int)
 
 
 # -------------%<--------------
-# segment from vim functions
+# segments from vim functions
 # -------------%>--------------
 def vim_func_segment(pl, func_name, *args):
     if int(vim_func_exists('*' + func_name)) > 0:
@@ -54,6 +54,20 @@ def unite(pl):
     '''Return the unite.vim statusline
     '''
     return vim_func_segment(pl, 'unite#get_status_string')
+
+
+@window_cached
+def vimshell(pl):
+    '''Return the vimshell statusline
+    '''
+    return vim_func_segment(pl, 'vimshell#get_status_string')
+
+
+@window_cached
+def vimfiler(pl):
+    '''Return the vimfiler statusline
+    '''
+    return vim_func_segment(pl, 'vimfiler#get_status_string')
 
 
 # -------------%<-------------
