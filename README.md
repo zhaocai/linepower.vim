@@ -5,9 +5,9 @@
     Author        : Zhao Cai
     EMail         : caizhaoff@gmail.com
     Homepage      : http://zhaocai.github.io/linepower.vim/
-    Version       : 1.0.0
+    Version       : 1.1.0
     Date Created  : Tue 07 May 2013 08:59:43 PM EDT
-    Last Modified : Tue 07 May 2013 08:59:45 PM EDT
+    Last Modified : Wed 08 May 2013 02:57:10 AM EDT
     ------------- - -----------------------------------------------
 
 This powerline extension is a quickstart for adding customized powerline local themes in vim. 
@@ -31,7 +31,14 @@ You may fork it and add more local themes.
     ![syntastic]( http://d.pr/i/tT0l+ )
 
 4. vimfiler
-5. asyncommand
+    
+    ![vimfiler](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/vimfiler.png)
+
+5. vimshell
+
+    ![vimshell](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/vimshell.png)
+
+6. asyncommand
 
 
 

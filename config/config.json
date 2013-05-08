@@ -40,6 +40,7 @@
 				"linepower.matchers.unite": "unite",
 				"linepower.matchers.tagbar": "tagbar",
 				"linepower.matchers.vimfiler": "vimfiler" ,
+				"linepower.matchers.vimshell": "vimshell" ,
 				"quickfix": "quickfix"
 			}
 		},

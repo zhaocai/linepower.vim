@@ -36,7 +36,8 @@
 		"asynccommand":             { "fg": "brightyellow", "bg": "gray2" },
 		"tagbar_statusline":        { "fg": "gray6", "bg": "darkestblue" },
 		"vimfiler":                 { "fg": "gray6", "bg": "darkestblue" },
-		"unite":                    { "fg": "brightyellow", "bg": "gray2" }
+		"unite":                    { "fg": "brightyellow", "bg": "gray2" },
+		"vimshell":                    { "fg": "brightyellow", "bg": "gray2" }
 	},
 	"mode_translations": {
 		"nc": {

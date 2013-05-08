@@ -32,6 +32,7 @@
 		"tagbar_currenttag":     { "fg": "solarized.base1"       , "bg": "solarized.base02" } , 
 		"asynccommand":          { "fg": "solarized.magenta"     , "bg": "solarized.base02" } , 
 		"unite":                 { "fg": "solarized.base3"       , "bg": "solarized.violet" } , 
+		"vimshell":              { "fg": "solarized.base3"       , "bg": "solarized.blue" } , 
 		"vimfiler":              { "fg": "gray10"                , "bg": "solarized.orange" } , 
 		"tagbar_statusline":     { "fg": "gray10"                , "bg": "solarized.orange" } , 
 		"explore":               { "fg": "gray10"                , "bg": "solarized.orange" }
