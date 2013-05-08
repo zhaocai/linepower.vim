@@ -1,5 +1,18 @@
 # Vim local themes for [powerline][powerline]:
 
+    ------------- - -----------------------------------------------
+    Plugin        : linepower.vim
+    Author        : Zhao Cai
+    EMail         : caizhaoff@gmail.com
+    Homepage      : http://zhaocai.github.io/linepower.vim/
+    Version       : 1.0.0
+    Date Created  : Tue 07 May 2013 08:59:43 PM EDT
+    Last Modified : Tue 07 May 2013 08:59:45 PM EDT
+    ------------- - -----------------------------------------------
+
+This powerline extension is a quickstart for adding customized powerline local themes in vim. 
+
+You may fork it and add more local themes for your convenience.
 
 ## Included Local Themes
 
