@@ -21,6 +21,7 @@ detailed_description: |
   - tagbar
   - rvm/rbenv version
   - syntastic
+  - vimshell
   - vimfiler
   - asyncommand
 
@@ -29,6 +30,11 @@ install_details: |
   http://zhaocai.github.io/linepower.vim/
 
 versions:
+- '1.1.0': |
+   - update solarized colors
+   - add vimshell, vimfiler local theme
+   - improve tagbar theme
+
 - '1.0.0': |
    - 1 Major Enhancements
        * add unite.vim local_theme

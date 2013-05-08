@@ -1,8 +1,24 @@
 # RELEASE HISTORY
 
-## HEAD / 2013-05-08
+## V1.1.0 / 2013-05-08
 
-Current Development (Zhao Cai)
+tweak solarized theme, add local theme for vimfiler and vimshell (Zhao Cai <caizhaoff@gmail.com>)
+
+Changes:
+
+* 2 Major Enhancements
+
+    * update solarized theme
+    * remove '_segment' from segment names
+
+* 1 Minor Enhancements
+
+    * add vimfiler theme
+
+
+## V1.0.0 / 2013-05-08
+
+release to vim.org (Zhao Cai <caizhaoff@gmail.com>)
 
 Changes:
 
@@ -17,4 +33,15 @@ Changes:
     * rake install/diff
     * use @window_cached
     * add config
+
+
+## HEAD / 2013-05-09
+
+Current Development (Zhao Cai)
+
+Changes:
+
+* 1 Major Enhancements
+
+    * add vimshell local theme
 
