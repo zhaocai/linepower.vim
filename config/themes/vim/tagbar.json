@@ -4,7 +4,7 @@
 		"left": [
 			{
 				"module" : "linepower.segments",
-				"name": "tagbar_statusline_segment",
+				"name": "tagbar_statusline",
 				"draw_soft_divider": false
 			},
 			{

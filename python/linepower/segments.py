@@ -23,34 +23,34 @@ def vim_func_segment(pl, func_name, *args):
 
 
 @window_cached
-def tagbar_currenttag_segment(pl):
+def tagbar_currenttag(pl):
     '''Return the tagbar current tag
     '''
     return vim_func_segment(pl, 'tagbar#currenttag', '%s', '', 'f')
 
 
-def tagbar_statusline_segment(pl):
+def tagbar_statusline(pl):
     '''Return the tagbar statusline
     '''
     return vim_func_segment(pl, 'TagbarGenerateStatusline')
 
 
 @window_cached
-def asynccommand_segment(pl):
+def asynccommand(pl):
     '''Return the asynccommand statusline
     '''
     return vim_func_segment(pl, 'asynccommand#statusline')
 
 
 @window_cached
-def syntastic_segment(pl):
+def syntastic(pl):
     '''Return the syntastic statusline flag
     '''
     return vim_func_segment(pl, 'SyntasticStatuslineFlag')
 
 
 @window_cached
-def unite_segment(pl):
+def unite(pl):
     '''Return the unite.vim statusline
     '''
     return vim_func_segment(pl, 'unite#get_status_string')

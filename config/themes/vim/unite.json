@@ -9,7 +9,7 @@
 			},
 			{
 				"module" : "linepower.segments",
-				"name": "unite_segment",
+				"name": "unite",
 				"draw_soft_divider": true
 			},
 			{

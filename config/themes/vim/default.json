@@ -58,17 +58,17 @@
 			},
 			{
 				"module" : "linepower.segments",
-				"name": "tagbar_currenttag_segment",
+				"name": "tagbar_currenttag",
 				"draw_soft_divider": false
 			},
 			{
 				"module" : "linepower.segments",
-				"name": "asynccommand_segment",
+				"name": "asynccommand",
 				"draw_soft_divider": false
 			},
 			{
 				"module" : "linepower.segments",
-				"name": "syntastic_segment",
+				"name": "syntastic",
 				"draw_soft_divider": false
 			},
 			{

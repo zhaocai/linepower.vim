@@ -12,7 +12,7 @@
 
 This powerline extension is a quickstart for adding customized powerline local themes in vim. 
 
-You may fork it and add more local themes for your convenience.
+You may fork it and add more local themes.
 
 ## Included Local Themes
 
