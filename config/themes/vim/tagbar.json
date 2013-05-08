@@ -20,7 +20,7 @@
 			{
 				"type": "string",
 				"contents": "Tagbar",
-				"highlight_group": ["file_name"],
+				"highlight_group": ["explore"],
 				"draw_soft_divider": true
 			}
 		]

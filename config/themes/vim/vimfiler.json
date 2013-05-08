@@ -4,7 +4,7 @@
 			{
 				"type": "string",
 				"contents": "Vimfiler",
-				"highlight_group": ["file_name"]
+				"highlight_group": ["explore"]
 			},
 			{
 				"type": "string",
