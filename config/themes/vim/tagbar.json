@@ -20,6 +20,7 @@
 			{
 				"type": "string",
 				"contents": "Tagbar",
+				"priority" : 10,
 				"highlight_group": ["file_name"],
 				"draw_soft_divider": true
 			}

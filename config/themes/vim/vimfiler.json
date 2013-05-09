@@ -6,6 +6,8 @@
 				"type": "string",
 				"contents": "Vimfiler",
 				"highlight_group": ["file_name"],
+				"width": "auto",
+				"priority" : 10,
 				"draw_soft_divider": true
 
 			},
