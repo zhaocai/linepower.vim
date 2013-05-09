@@ -10,6 +10,16 @@
 			"args": { "gradient": true },
 			"after": "%"
 		},
+		"rvm_current": {
+			"args": { "only_ruby": true }
+		},
+		"file_directory": {
+			"args": {
+				"shorten_user": true, 
+				"shorten_cwd": true, 
+				"shorten_home": true 
+			}
+		},
 		"line_current_symbol": {
 			"contents": " "
 		}
@@ -38,10 +48,7 @@
 			{
 				"name": "file_directory",
 				"priority": 40,
-				"draw_soft_divider": false, 
-				"shorten_user": true, 
-				"shorten_cwd": true, 
-				"shorten_home": true 
+				"draw_soft_divider": false 
 			},
 			{
 				"name": "file_name",

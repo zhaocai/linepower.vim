@@ -31,7 +31,7 @@
 		"modified_buffers":         { "fg": "brightyellow", "bg": "gray2" },
 		"explore":                  { "fg": "white", "bg": "darkestblue" },
 		"syntastic":                { "fg": "brightestred", "bg": "gray2", "attr": ["bold"] },
-		"ruby_version":             { "fg": "brightyellow", "bg": "gray2", "attr": ["bold"] },
+		"ruby_version":             { "fg": "brightyellow", "bg": "gray2", "attr": ["underline"] },
 		"tagbar_currenttag":        { "fg": "gray7", "bg": "gray2" },
 		"asynccommand":             { "fg": "brightyellow", "bg": "gray2" },
 		"tagbar_statusline":        { "fg": "gray6", "bg": "darkestblue" },
@@ -80,7 +80,7 @@
 				"mode":               { "fg": "darkestcyan", "bg": "white", "attr": ["bold"] },
 				"background:divider": { "fg": "darkcyan", "bg": "darkestblue" },
 				"branch:divider":     { "fg": "darkcyan", "bg": "darkblue" },
-				"ruby_version":       { "fg": "white", "bg": "darkestblue", "attr": ["bold"] },
+				"ruby_version":       { "fg": "white", "bg": "darkestblue", "attr": ["underline"] },
 				"syntastic":          { "fg": "white", "bg": "darkestblue", "attr": ["bold"] },
 				"asynccommand":       { "fg": "brightyellow", "bg": "darkestblue", "attr": ["bold"] },
 				"tagbar_currenttag":  { "fg": "white", "bg": "darkestblue", "attr": ["bold"] }
