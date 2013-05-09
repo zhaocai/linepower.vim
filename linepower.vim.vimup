@@ -30,6 +30,11 @@ install_details: |
   http://zhaocai.github.io/linepower.vim/
 
 versions:
+- '1.2.0': |
+   - tweak colors
+   - 'only_ruby' option for rvm/rbenv segments 
+
+
 - '1.1.0': |
    - update solarized colors
    - add vimshell, vimfiler local theme

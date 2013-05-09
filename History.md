@@ -1,5 +1,20 @@
 # RELEASE HISTORY
 
+## V1.2.0 / 2013-05-08
+
+tweak colors ; 'only_ruby' option for rvm and rbenv segments (Zhao Cai <caizhaoff@gmail.com>)
+
+Changes:
+
+* 1 Major Enhancements
+
+    * add vimshell local theme
+
+* 1 Minor Enhancements
+
+    * improve g:powerline_config_overrides init
+
+
 ## V1.1.0 / 2013-05-08
 
 tweak solarized theme, add local theme for vimfiler and vimshell (Zhao Cai <caizhaoff@gmail.com>)
@@ -41,7 +56,9 @@ Current Development (Zhao Cai)
 
 Changes:
 
-* 1 Major Enhancements
+* 1 Minor Enhancements
 
-    * add vimshell local theme
+    * optional args 'only_ruby'
+      
+      show rvm/rben version segment only in ruby window
 

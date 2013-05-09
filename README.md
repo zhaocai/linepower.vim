@@ -5,7 +5,7 @@
     Author        : Zhao Cai
     EMail         : caizhaoff@gmail.com
     Homepage      : http://zhaocai.github.io/linepower.vim/
-    Version       : 1.1.0
+    Version       : 1.2.0
     Date Created  : Tue 07 May 2013 08:59:43 PM EDT
     Last Modified : Wed 08 May 2013 02:57:10 AM EDT
     ------------- - -----------------------------------------------
