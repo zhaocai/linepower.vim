@@ -65,3 +65,19 @@ You may fork it and add more local themes.
 [powerline]: https://github.com/Lokaltog/powerline
 [linepower]: https://github.com/zhaocai/linepower.vim
 
+
+
+## Segments
+
+### Weather Segments
+
+```json 
+    {
+            "module" : "powerline.segments.common",
+            "name": "weather",
+            "exclude_modes": ["nc"],
+            "draw_soft_divider": true,
+            "priority": 10
+    },
+
+```
