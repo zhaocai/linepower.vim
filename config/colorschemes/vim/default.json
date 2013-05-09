@@ -29,15 +29,15 @@
 		"virtcol_current_gradient": { "fg": "dark_GREEN_Orange_red", "bg": "gray10" },
 		"col_current":              { "fg": "gray6", "bg": "gray10" },
 		"modified_buffers":         { "fg": "brightyellow", "bg": "gray2" },
-		"explore":                  { "fg": "white", "bg": "darkestblue" },
+		"explore":                  { "fg": "oldlace", "bg": "darkestblue" },
 		"syntastic":                { "fg": "brightestred", "bg": "gray2", "attr": ["bold"] },
 		"ruby_version":             { "fg": "brightyellow", "bg": "gray2", "attr": ["underline"] },
 		"tagbar_currenttag":        { "fg": "gray7", "bg": "gray2" },
 		"asynccommand":             { "fg": "brightyellow", "bg": "gray2" },
-		"tagbar_statusline":        { "fg": "gray6", "bg": "darkestblue" },
-		"vimfiler":                 { "fg": "gray6", "bg": "darkestblue" },
+		"tagbar_statusline":        { "fg": "oldlace", "bg": "darkestblue" },
+		"vimfiler":                 { "fg": "oldlace", "bg": "darkestblue" },
 		"unite":                    { "fg": "brightyellow", "bg": "gray2" },
-		"vimshell":                    { "fg": "brightyellow", "bg": "gray2" }
+		"vimshell":                 { "fg": "brightyellow", "bg": "gray2" }
 	},
 	"mode_translations": {
 		"nc": {
@@ -57,7 +57,7 @@
 				"gray8": "gray4",
 				"gray9": "gray4",
 				"gray10": "gray5",
-				"white": "gray6",
+				"oldlace": "lightyellow",
 				"green_yellow_red": "gray5"
 			}
 		},

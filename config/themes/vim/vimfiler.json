@@ -10,6 +10,11 @@
 
 			},
 			{
+				"module" : "linepower.segments",
+				"name": "vimfiler",
+				"draw_soft_divider": false
+			},
+			{
 				"type": "string",
 				"highlight_group": ["explore"],
 				"draw_soft_divider": false,
@@ -17,15 +22,7 @@
 				"width": "auto"
 			}
 
-		],
-		"right": [
-			{
-				"module" : "linepower.segments",
-				"name": "vimfiler",
-				"draw_soft_divider": false
-			}
 		]
-
 
 	}
 }
