@@ -72,24 +72,28 @@
 			},
 			{
 				"name": "modified_indicator",
-				"before": " "
+				"before": " ",
+				"draw_soft_divider": true
 			},
 			{
 				"module" : "linepower.segments",
 				"name": "tagbar_currenttag",
 				"exclude_modes": ["nc"],
+				"draw_hard_divider": false,
 				"draw_soft_divider": false
 			},
 			{
 				"module" : "linepower.segments",
 				"name": "asynccommand",
 				"exclude_modes": ["nc"],
+				"draw_hard_divider": false,
 				"draw_soft_divider": false
 			},
 			{
 				"module" : "linepower.segments",
 				"name": "syntastic",
 				"exclude_modes": ["nc"],
+				"draw_hard_divider": false,
 				"draw_soft_divider": false
 			},
 			{
