@@ -35,7 +35,7 @@ Plugin        : linepower.vim
 Author        : Zhao Cai
 EMail         : caizhaoff@gmail.com
 Homepage      : http://zhaocai.github.io/linepower.vim/
-Version       : 1.1.0
+Version       : 1.2.0
 Date Created  : Tue 07 May 2013 08:59:43 PM EDT
 Last Modified : Wed 08 May 2013 02:57:10 AM EDT
 ------------- - -----------------------------------------------
@@ -91,6 +91,20 @@ Last Modified : Wed 08 May 2013 02:57:10 AM EDT
 <li>
 <em>vundle</em>:</li>
 </ul><div class="highlight"><pre>    Bundle <span class="s1">'zhaocai/linepower.vim'</span>
+</pre></div>
+
+<h2>Segments</h2>
+
+<h3>Weather Segments</h3>
+
+<div class="highlight"><pre>    <span class="p">{</span>
+            <span class="nt">"module"</span> <span class="p">:</span> <span class="s2">"powerline.segments.common"</span><span class="p">,</span>
+            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"weather"</span><span class="p">,</span>
+            <span class="nt">"exclude_modes"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"nc"</span><span class="p">],</span>
+            <span class="nt">"draw_soft_divider"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">"priority"</span><span class="p">:</span> <span class="mi">10</span>
+    <span class="p">}</span><span class="err">,</span>
+
 </pre></div>
       </section>
     </div>
