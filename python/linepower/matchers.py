@@ -1,6 +1,8 @@
 from __future__ import absolute_import
 
 import os
+import re
+
 from powerline.bindings.vim import getbufvar
 
 
@@ -18,4 +20,5 @@ def vimfiler(matcher_info):
 
 
 def vimshell(matcher_info):
-    return str(getbufvar(matcher_info['bufnr'], '&filetype')) == 'vimshell'
+    return re.match(r'^(vimshell|int-\w*|term-\w*)$',
+                    str(getbufvar(matcher_info['bufnr'], '&filetype')))
