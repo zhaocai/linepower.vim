@@ -1,0 +1,75 @@
+{	
+	"default_module": "powerline.segments.vim",
+	"segments": {
+		"left": [
+			{
+				"type": "string",
+				"contents": "Preview",
+				"exclude_modes": [],
+				"highlight_group": ["explore"],
+				"draw_soft_divider": true
+			},
+			{
+				"name": "file_directory",
+				"priority": 40,
+				"draw_soft_divider": false 
+			},
+			{
+				"name": "file_name",
+				"draw_soft_divider": false
+			},
+			{
+				"name": "file_vcs_status",
+				"before": " ",
+				"draw_soft_divider": false
+			},
+			{
+				"type": "string",
+				"highlight_group": ["background"],
+				"draw_soft_divider": false,
+				"draw_hard_divider": false,
+				"width": "auto"
+			}
+		],
+		"right": [
+			{
+				"name": "file_format",
+				"draw_soft_divider": false,
+				"priority": 60
+			},
+			{
+				"name": "file_encoding",
+				"priority": 60
+			},
+			{
+				"name": "file_type",
+				"priority": 60
+			},
+			{
+				"name": "line_percent",
+				"priority": 50,
+				"width": 4,
+				"align": "r"
+			},
+			{
+				"type": "string",
+				"name": "line_current_symbol",
+				"highlight_group": ["line_current_symbol", "line_current"]
+			},
+			{
+				"name": "line_current",
+				"draw_soft_divider": false,
+				"width": 3,
+				"align": "r"
+			},
+			{
+				"name": "virtcol_current",
+				"draw_soft_divider": false,
+				"priority": 20,
+				"before": ":",
+				"width": 3,
+				"align": "l"
+			}
+		]
+	}
+}

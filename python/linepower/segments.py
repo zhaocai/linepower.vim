@@ -3,19 +3,18 @@
 
 from subprocess import Popen, PIPE
 from powerline.bindings.vim import vim_get_func, getbufvar
-from powerline.segments.vim import window_cached
+from powerline.segments.vim import window_cached, vim_funcs
 # from powerline.theme import requires_segment_info
 from powerline.lib.threaded import ThreadedSegment, with_docstring
 
-
-vim_exists = vim_get_func('exists', rettype=int)
+vim_funcs['exists'] = vim_get_func('exists', rettype=int)
 
 
 # -------------%<--------------
 # segments from vim functions
 # -------------%>--------------
 def vim_func_segment(pl, func_name, *args):
-    if int(vim_exists('*' + func_name)) > 0:
+    if int(vim_funcs['exists']('*' + func_name)) > 0:
         f = vim_get_func(func_name, rettype=str)
         return str(f(*args))
     else:

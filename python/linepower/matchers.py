@@ -3,7 +3,18 @@ from __future__ import absolute_import
 import os
 import re
 
-from powerline.bindings.vim import getbufvar
+from powerline.bindings.vim import vim_get_func, getbufvar
+from powerline.segments.vim import vim_funcs
+
+vim_funcs['winnr'] = vim_get_func('winnr', rettype=int)
+vim_funcs['bufwinnr'] = vim_get_func('bufwinnr', rettype=int)
+vim_funcs['getwinvar'] = vim_get_func('getwinvar')
+
+
+def getbufwinvar(bufnr, var):
+    return vim_funcs['getwinvar'](vim_funcs['bufwinnr'](bufnr), var)
+
+# ---------------------------------%<----------------------------------
 
 
 def tagbar(matcher_info):
@@ -17,6 +28,11 @@ def unite(matcher_info):
 
 def vimfiler(matcher_info):
     return str(getbufvar(matcher_info['bufnr'], '&filetype')) == 'vimfiler'
+
+
+# [vim bug?] getbufvar return 1 for non-previewwindow
+def previewwindow(matcher_info):
+    return getbufwinvar(matcher_info['bufnr'], '&previewwindow') == 1
 
 
 def vimshell(matcher_info):

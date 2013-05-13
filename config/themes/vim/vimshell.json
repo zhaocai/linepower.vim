@@ -22,8 +22,7 @@
 		],
 		"right": [
 			{
-				"name": "file_name",
-				"draw_soft_divider": true
+				"name": "file_name"
 			}
 		]
 

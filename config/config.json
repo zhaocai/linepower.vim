@@ -37,6 +37,7 @@
 			"local_themes": {
 				"cmdwin": "cmdwin",
 				"help": "help",
+				"linepower.matchers.previewwindow": "previewwindow",
 				"linepower.matchers.unite": "unite",
 				"linepower.matchers.tagbar": "tagbar",
 				"linepower.matchers.vimfiler": "vimfiler" ,
