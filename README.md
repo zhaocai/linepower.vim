@@ -41,6 +41,10 @@ You may fork it and add more local themes.
 6. asyncommand
 
 
+7. previewwindow
+
+    ![previewwindow](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/previewwindow.png)
+
 
 ## Installation
 
