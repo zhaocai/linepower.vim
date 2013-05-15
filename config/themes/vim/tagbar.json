@@ -1,16 +1,28 @@
 {
 	"default_module": "powerline.segments.vim",
+	"segment_data": {
+		"tagbar_sort_indicator": {
+			"args": { "text": "⚕" }
+		}
+	},
+
 	"segments": {
 		"left": [
 			{
 				"module" : "linepower.segments",
-				"name": "tagbar_statusline",
+				"name": "tagbar_currentfile",
+				"draw_soft_divider": false
+			},
+			{
+				"module" : "linepower.segments",
+				"name": "tagbar_sort_indicator",
+				"before": " ",
 				"draw_soft_divider": false
 			},
 			{
 				"type": "string",
 				"highlight_group": ["explore"],
-				"draw_soft_divider": false,
+				"draw_soft_divider": true,
 				"draw_hard_divider": false,
 				"width": "auto"
 			}
@@ -20,7 +32,6 @@
 			{
 				"type": "string",
 				"contents": "Tagbar",
-				"priority" : 10,
 				"highlight_group": ["file_name"],
 				"draw_soft_divider": true
 			}

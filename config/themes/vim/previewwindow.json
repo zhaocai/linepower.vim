@@ -1,12 +1,17 @@
 {	
 	"default_module": "powerline.segments.vim",
+	"segment_data": {
+		"window_type": {
+			"contents": "Preview"
+		}
+	},
 	"segments": {
 		"left": [
 			{
 				"type": "string",
-				"contents": "Preview",
-				"exclude_modes": [],
-				"highlight_group": ["explore"],
+				"name": "window_type",
+				"include_modes": ["nc"],
+				"highlight_group": ["previewwindow"],
 				"draw_soft_divider": true
 			},
 			{

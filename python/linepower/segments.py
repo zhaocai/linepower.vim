@@ -1,6 +1,8 @@
 #! /usr/bin/env python -3
 # -*- coding: utf-8 -*-
 
+import vim
+
 from subprocess import Popen, PIPE
 from powerline.bindings.vim import vim_get_func, getbufvar
 from powerline.segments.vim import window_cached, vim_funcs
@@ -10,9 +12,10 @@ from powerline.lib.threaded import ThreadedSegment, with_docstring
 vim_funcs['exists'] = vim_get_func('exists', rettype=int)
 
 
-# -------------%<--------------
-# segments from vim functions
-# -------------%>--------------
+# --------%<--------
+# helper functions
+# --------%>--------
+
 def vim_func_segment(pl, func_name, *args):
     if int(vim_funcs['exists']('*' + func_name)) > 0:
         f = vim_get_func(func_name, rettype=str)
@@ -21,18 +24,13 @@ def vim_func_segment(pl, func_name, *args):
         return None
 
 
-@window_cached
-def tagbar_currenttag(pl):
-    '''Return the tagbar current tag
-    '''
-    return vim_func_segment(pl, 'tagbar#currenttag', '%s', '', 'f')
+def vim_bool_variable(variable):
+    return bool(int(vim.eval(variable)))
 
 
-def tagbar_statusline(pl):
-    '''Return the tagbar statusline
-    '''
-    return vim_func_segment(pl, 'TagbarGenerateStatusline')
-
+# -------------%<--------------
+# segments from vim functions
+# -------------%>--------------
 
 @window_cached
 def asynccommand(pl):
@@ -69,6 +67,41 @@ def vimfiler(pl):
     return vim_func_segment(pl, 'vimfiler#get_status_string')
 
 
+# -------%<--------
+# Tagbar segments
+# -------%>--------
+
+@window_cached
+def tagbar_currenttag(pl):
+    '''Return tagbar current tag
+    '''
+    return vim_func_segment(pl, 'tagbar#currenttag', '%s', '', 'f')
+
+
+@window_cached
+def tagbar_statusline(pl):
+    '''Return tagbar statusline
+    '''
+    return vim_func_segment(pl, 'TagbarGenerateStatusline')
+
+
+@window_cached
+def tagbar_currentfile(pl):
+    '''Return tagbar current file
+    '''
+    return vim_func_segment(pl, 'tagbar#currentfile')
+
+
+@window_cached
+def tagbar_sort_indicator(pl, text='⊻'):
+    '''Return tagbar sort indicator
+    '''
+    if vim_bool_variable('g:tagbar_sort'):
+        return text
+    else:
+        return None
+
+
 # -------------%<-------------
 # ruby (rvm, rbenv) sgements
 # -------------%>-------------
@@ -102,6 +135,7 @@ Highlight groups used: ``ruby_version``.
 
 
 class RbEnvSegment(RVMSegment):
+
     def update(self, old_rbenv_version):
         try:
             p = Popen(['rbenv', 'version'],

@@ -38,8 +38,11 @@
                 "syntastic":                { "fg": "brightestred", "bg": "gray2", "attr": ["bold"] },
                 "ruby_version":             { "fg": "brightyellow", "bg": "gray2", "attr": ["underline"] },
                 "tagbar_currenttag":        { "fg": "gray7", "bg": "gray2" },
+                "tagbar_sort_indicator":    { "fg": "brightgreen", "bg": "darkestblue" },
+                "tagbar_currentfile":       { "fg": "white", "bg": "darkestblue", "attr": ["bold"] },
                 "asynccommand":             { "fg": "brightyellow", "bg": "gray2" },
                 "tagbar_statusline":        { "fg": "oldlace", "bg": "darkestblue" },
+                "previewwindow":            { "fg": "white", "bg": "darkorange" },
                 "vimfiler":                 { "fg": "oldlace", "bg": "darkestblue" },
                 "unite":                    { "fg": "brightyellow", "bg": "gray2" },
                 "vimshell":                 { "fg": "brightyellow", "bg": "gray2" }
@@ -48,9 +51,9 @@
 		"nc": {
 			"colors": {
 				"brightyellow": "darkorange",
-				"darkorange": "brightyellow",
+				"darkorange": "darkgreen",
 				"darkestblue": "darkestcyan",
-				"brightestred": "darkred",
+				"brightestred": "mediumred",
 				"gray0": "gray0",
 				"gray1": "gray0",
 				"gray2": "gray0",
