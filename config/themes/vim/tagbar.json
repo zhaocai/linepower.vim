@@ -9,6 +9,12 @@
 	"segments": {
 		"left": [
 			{
+				"type": "string",
+				"contents": "Tagbar",
+				"highlight_group": ["file_name"],
+				"draw_soft_divider": true
+			},
+			{
 				"module" : "linepower.segments",
 				"name": "tagbar_currentfile",
 				"draw_soft_divider": false
@@ -19,6 +25,7 @@
 				"before": " ",
 				"draw_soft_divider": false
 			},
+
 			{
 				"type": "string",
 				"highlight_group": ["explore"],
@@ -27,16 +34,7 @@
 				"width": "auto"
 			}
 
-		],
-		"right": [
-			{
-				"type": "string",
-				"contents": "Tagbar",
-				"highlight_group": ["file_name"],
-				"draw_soft_divider": true
-			}
 		]
-
 
 	}
 }

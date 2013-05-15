@@ -23,7 +23,7 @@ You may fork it and add more local themes.
 
 2. tagbar
 
-    ![tagbar]( http://d.pr/i/yrUk+ )
+    ![tagbar](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar.png) ![tagbar_nc](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar_nc.png)
 
 3. rvm/rbenv version
 4. syntastic
