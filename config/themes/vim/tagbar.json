@@ -2,10 +2,14 @@
 	"default_module": "powerline.segments.vim",
 	"segment_data": {
 		"tagbar_sort_indicator": {
-			"args": { "text": "⚕" }
+			"args": {
+				"override": {
+					"on" : "»s",
+					"off": "»n"
+				}
+			}
 		}
 	},
-
 	"segments": {
 		"left": [
 			{
@@ -16,13 +20,12 @@
 			},
 			{
 				"module" : "linepower.segments",
-				"name": "tagbar_currentfile",
-				"draw_soft_divider": false
+				"name": "tagbar_sort_indicator",
+				"draw_soft_divider": true
 			},
 			{
 				"module" : "linepower.segments",
-				"name": "tagbar_sort_indicator",
-				"before": " ",
+				"name": "tagbar_currentfile",
 				"draw_soft_divider": false
 			},
 
@@ -38,3 +41,4 @@
 
 	}
 }
+

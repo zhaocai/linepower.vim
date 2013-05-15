@@ -12,9 +12,15 @@ from powerline.lib.threaded import ThreadedSegment, with_docstring
 vim_funcs['exists'] = vim_get_func('exists', rettype=int)
 
 
+sort_indicator = {
+    "on": "sort",
+    "off": "name"
+}
+
 # --------%<--------
 # helper functions
 # --------%>--------
+
 
 def vim_func_segment(pl, func_name, *args):
     if int(vim_funcs['exists']('*' + func_name)) > 0:
@@ -93,18 +99,26 @@ def tagbar_currentfile(pl):
 
 
 @window_cached
-def tagbar_sort_indicator(pl, text='⊻'):
+def tagbar_sort_indicator(pl, override=None):
     '''Return tagbar sort indicator
     '''
     if vim_bool_variable('g:tagbar_sort'):
-        return text
+        sort = "on"
     else:
-        return None
+        sort = "off"
 
+    if not override:
+        return sort_indicator[sort]
+    try:
+        return override[sort]
+    except KeyError:
+        return sort_indicator[sort]
 
 # -------------%<-------------
 # ruby (rvm, rbenv) sgements
 # -------------%>-------------
+
+
 class RVMSegment(ThreadedSegment):
     interval = 10
 
