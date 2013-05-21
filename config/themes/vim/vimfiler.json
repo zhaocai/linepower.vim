@@ -3,16 +3,16 @@
 	"segments": {
 		"left": [
 			{
-				"name": "file_name",
-				"width": "auto",
+				"type": "string",
+				"contents": "VimFiler",
 				"priority" : 10,
+				"highlight_group": ["file_name"],
 				"draw_soft_divider": true
-
 			},
 			{
 				"module" : "linepower.segments",
 				"name": "vimfiler",
-				"draw_soft_divider": false
+				"draw_soft_divider": true
 			},
 			{
 				"type": "string",
