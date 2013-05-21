@@ -38,3 +38,11 @@ def previewwindow(matcher_info):
 def vimshell(matcher_info):
     return re.match(r'^(vimshell|int-\w*|term-\w*)$',
                     str(getbufvar(matcher_info['bufnr'], '&filetype')))
+
+
+def quickfix(matcher_info):
+    return str(getbufvar(matcher_info['bufnr'], 'errorlist_type')) == 'quickfix'
+
+
+def locationlist(matcher_info):
+    return str(getbufvar(matcher_info['bufnr'], 'errorlist_type')) == 'location'

@@ -42,7 +42,8 @@
 				"linepower.matchers.tagbar": "tagbar",
 				"linepower.matchers.vimfiler": "vimfiler" ,
 				"linepower.matchers.vimshell": "vimshell" ,
-				"quickfix": "quickfix"
+				"linepower.matchers.locationlist": "locationlist" ,
+				"linepower.matchers.quickfix": "quickfix"
 			}
 		},
 		"wm": {
