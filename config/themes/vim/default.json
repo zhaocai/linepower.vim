@@ -58,7 +58,7 @@
 			},
 			{
 				"name": "file_directory",
-				"priority": 40,
+				"priority": 20,
 				"draw_soft_divider": false 
 			},
 			{
@@ -78,6 +78,7 @@
 			{
 				"module" : "linepower.segments",
 				"name": "tagbar_currenttag",
+				"priority": 10,
 				"exclude_modes": ["nc"],
 				"draw_hard_divider": false,
 				"draw_soft_divider": false
@@ -85,6 +86,7 @@
 			{
 				"module" : "linepower.segments",
 				"name": "asynccommand",
+				"priority": 60,
 				"exclude_modes": ["nc"],
 				"draw_hard_divider": false,
 				"draw_soft_divider": false
@@ -92,6 +94,7 @@
 			{
 				"module" : "linepower.segments",
 				"name": "syntastic",
+				"priority": 50,
 				"exclude_modes": ["nc"],
 				"draw_hard_divider": false,
 				"draw_soft_divider": false
@@ -109,7 +112,7 @@
 				"name": "file_format",
 				"draw_soft_divider": false,
 				"exclude_modes": ["nc"],
-				"priority": 60
+				"priority": 10
 			},
 			{
 				"name": "file_encoding",
@@ -127,11 +130,11 @@
 				"draw_soft_divider": true,
 				"draw_hard_divider": true,
 				"exclude_modes": ["nc"],
-				"priority": 50
+				"priority": 20
 			},
 			{
 				"name": "line_percent",
-				"priority": 50,
+				"priority": 30,
 				"width": 4,
 				"align": "r"
 			},
