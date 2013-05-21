@@ -9,7 +9,7 @@
 			{
 				"type": "string",
 				"name": "buffer_name",
-				"highlight_group": ["file_name"],
+				"highlight_group": ["quickfix"],
 				"draw_soft_divider": false
 			},
 			{

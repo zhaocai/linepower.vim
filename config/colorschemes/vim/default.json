@@ -43,6 +43,8 @@
                 "asynccommand":             { "fg": "brightyellow", "bg": "gray2" },
                 "tagbar_statusline":        { "fg": "oldlace", "bg": "darkestblue" },
                 "previewwindow":            { "fg": "white", "bg": "darkorange" },
+                "quickfix":                 { "fg": "white", "bg": "brightestred" },
+                "locationlist":             { "fg": "white", "bg": "darkestblue" },
                 "vimfiler":                 { "fg": "oldlace", "bg": "darkestblue" },
                 "unite":                    { "fg": "brightyellow", "bg": "gray2" },
                 "vimshell":                 { "fg": "brightyellow", "bg": "gray2" }
@@ -53,7 +55,7 @@
 				"brightyellow": "darkorange",
 				"darkorange": "darkgreen",
 				"darkestblue": "darkestcyan",
-				"brightestred": "mediumred",
+				"brightestred": "darkestpurple",
 				"gray0": "gray0",
 				"gray1": "gray0",
 				"gray2": "gray0",

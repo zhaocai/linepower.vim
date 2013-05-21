@@ -34,6 +34,8 @@
 		"unite":                 { "fg": "solarized.base3"       , "bg": "solarized.violet" } , 
 		"vimshell":              { "fg": "solarized.base3"       , "bg": "solarized.base00" } , 
 		"vimfiler":              { "fg": "gray10"                , "bg": "solarized.orange" } , 
+		"quickfix":              { "fg": "gray10"                , "bg": "solarized.red" } ,
+		"locationlist":          { "fg": "gray10"                , "bg": "solarized.yellow" } ,
 		"tagbar_statusline":     { "fg": "gray10"                , "bg": "solarized.orange" } , 
 		"explore":               { "fg": "gray10"                , "bg": "solarized.orange" }
 	},
