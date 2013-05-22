@@ -5,7 +5,7 @@
     Author        : Zhao Cai
     EMail         : caizhaoff@gmail.com
     Homepage      : http://zhaocai.github.io/linepower.vim/
-    Version       : 1.2.0
+    Version       : 1.3.0
     Date Created  : Tue 07 May 2013 08:59:43 PM EDT
     Last Modified : Wed 08 May 2013 02:57:10 AM EDT
     ------------- - -----------------------------------------------
@@ -44,6 +44,12 @@ You may fork it and add more local themes.
 7. previewwindow
 
     ![previewwindow](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/previewwindow.png)
+
+8. quickfix / location list
+
+    ![quickfix](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/quickfix.png)
+
+    ![locationlist](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/locationlist.png)
 
 
 ## Installation
