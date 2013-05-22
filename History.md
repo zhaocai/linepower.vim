@@ -1,5 +1,37 @@
 # RELEASE HISTORY
 
+## V1.3.0 / 2013-05-21
+
+separate themes for quickfix and location list; previewwindow local theme ; change default divider ( it was not aligned ) (Zhao Cai <caizhaoff@gmail.com>)
+
+Changes:
+
+* 4 Major Enhancements
+
+    * separate themes for quickfix and location list
+    * add previewwindow local theme
+    * add local theme for previewwindow
+    * change default divider ( it was not aligned )
+
+* 11 Minor Enhancements
+
+    * update quickfix and locationlist colors
+    * improve vimfiler theme
+    * add load guard
+    * better tagbar local theme
+      
+      sort indicator (override)
+    * optimize tagbar theme
+    * improve match for vim interactive shell
+    * tweak line_percent insert mode color
+    * auto resize vimfiler name string
+    * tweak vimfiler,tagbar colors
+    * override mode indicators
+    * optional args 'only_ruby'
+      
+      show rvm/rben version segment only in ruby window
+
+
 ## V1.2.0 / 2013-05-08
 
 tweak colors ; 'only_ruby' option for rvm and rbenv segments (Zhao Cai <caizhaoff@gmail.com>)
@@ -50,15 +82,7 @@ Changes:
     * add config
 
 
-## HEAD / 2013-05-09
+## HEAD / 2013-05-22
 
 Current Development (Zhao Cai)
-
-Changes:
-
-* 1 Minor Enhancements
-
-    * optional args 'only_ruby'
-      
-      show rvm/rben version segment only in ruby window
 
