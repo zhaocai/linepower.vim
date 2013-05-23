@@ -47,7 +47,8 @@
                 "locationlist":             { "fg": "white", "bg": "darkestblue" },
                 "vimfiler":                 { "fg": "oldlace", "bg": "darkestblue" },
                 "unite":                    { "fg": "brightyellow", "bg": "gray2" },
-                "vimshell":                 { "fg": "brightyellow", "bg": "gray2" }
+                "vimshell":                 { "fg": "brightyellow", "bg": "gray2" },
+                "nerdtree":                 { "fg": "oldlace", "bg": "darkestblue" }
 	},
 	"mode_translations": {
 		"nc": {

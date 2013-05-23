@@ -37,7 +37,8 @@
 		"quickfix":              { "fg": "gray10"                , "bg": "solarized.red" } ,
 		"locationlist":          { "fg": "gray10"                , "bg": "solarized.yellow" } ,
 		"tagbar_statusline":     { "fg": "gray10"                , "bg": "solarized.orange" } , 
-		"explore":               { "fg": "gray10"                , "bg": "solarized.orange" }
+                "explore":               { "fg": "gray10"                , "bg": "solarized.orange" },
+                "nerdtree":              { "fg": "gray10"                , "bg": "solarized.orange" }
 	},
 	"mode_translations": {
 		"nc": {
