@@ -52,6 +52,9 @@ You may fork it and add more local themes.
 
     ![locationlist](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/locationlist.png)
 
+9. nerdtree
+
+    ![nerdtree](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/nerdtree.png)
 
 ## Installation
 

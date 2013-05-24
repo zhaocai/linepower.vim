@@ -19,11 +19,13 @@ detailed_description: |
   
   - unite.vim
   - tagbar
+  - nerdtree
   - rvm/rbenv version
   - syntastic
   - vimshell
   - vimfiler
   - asyncommand
+  - quickfix / locationlist
 
 
 install_details: |
