@@ -10,7 +10,7 @@
     Last Modified : Wed 08 May 2013 02:57:10 AM EDT
     ------------- - -----------------------------------------------
 
-This powerline extension is a quickstart for adding customized powerline local themes in vim. 
+This powerline extension is a quickstart for adding customized powerline local themes in vim.
 
 You may fork it and add more local themes.
 
@@ -23,7 +23,8 @@ You may fork it and add more local themes.
 
 2. tagbar
 
-    ![tagbar](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar.png)     ![tagbar_nc](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar_nc.png)
+    ![tagbar](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar.png)
+    ![tagbar_nc](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar_nc.png)
 
 3. rvm/rbenv version
 4. syntastic
@@ -31,7 +32,7 @@ You may fork it and add more local themes.
     ![syntastic]( http://d.pr/i/tT0l+ )
 
 4. vimfiler
-    
+
     ![vimfiler](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/vimfiler.png)
 
 5. vimshell
@@ -58,7 +59,7 @@ You may fork it and add more local themes.
 
 2. Replace the json files under `config` to corresponding files under `~/.config/powerline`. Check the diff if you already have customized configurations.
 
-3. Install [linepower][linepower] like any other vim plugins. For Example,  
+3. Install [linepower][linepower] like any other vim plugins. For Example,
 
 - *neobundle*:
 
@@ -72,8 +73,6 @@ You may fork it and add more local themes.
     Bundle 'zhaocai/linepower.vim'
 ```
 
-[powerline]: https://github.com/Lokaltog/powerline
-[linepower]: https://github.com/zhaocai/linepower.vim
 
 
 
@@ -81,7 +80,7 @@ You may fork it and add more local themes.
 
 ### Weather Segments
 
-```json 
+```json
     {
             "module" : "powerline.segments.common",
             "name": "weather",
@@ -91,3 +90,11 @@ You may fork it and add more local themes.
     },
 
 ```
+
+
+
+
+
+[powerline]: https://github.com/Lokaltog/powerline
+[linepower]: https://github.com/zhaocai/linepower.vim
+
