@@ -19,11 +19,13 @@ You may fork it and add more local themes.
 1. unite.vim
 
     ![unite normal]( http://d.pr/i/RtLV+ )
+    
     ![unite insert]( http://d.pr/i/OcyE+ )
 
 2. tagbar
 
     ![tagbar](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar.png)
+    
     ![tagbar_nc](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar_nc.png)
 
 3. rvm/rbenv version
