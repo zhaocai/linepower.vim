@@ -46,3 +46,7 @@ def quickfix(matcher_info):
 
 def locationlist(matcher_info):
     return str(getbufvar(matcher_info['bufnr'], 'errorlist_type')) == 'location'
+
+
+def nerdtree(matcher_info):
+    return str(getbufvar(matcher_info['bufnr'], '&filetype')) == 'nerdtree'
