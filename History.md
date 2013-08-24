@@ -1,5 +1,16 @@
 # RELEASE HISTORY
 
+## V1.4.0 / 2013-08-24
+
+ (Zhao Cai <caizhaoff@gmail.com>)
+
+Changes:
+
+* 1 Minor Enhancements
+
+    * change VimFiler to Vimfiler
+
+
 ## V1.3.0 / 2013-05-21
 
 separate themes for quickfix and location list; previewwindow local theme ; change default divider ( it was not aligned ) (Zhao Cai <caizhaoff@gmail.com>)
@@ -82,7 +93,7 @@ Changes:
     * add config
 
 
-## HEAD / 2013-05-22
+## HEAD / 2013-08-25
 
 Current Development (Zhao Cai)
 

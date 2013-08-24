@@ -12,6 +12,7 @@
 		"cwd:divider":        { "fg": "solarized.base1", "bg": "solarized.base01" },
 		"hostname":           { "fg": "solarized.base3", "bg": "solarized.base01" },
 		"exit_fail":          { "fg": "solarized.base3", "bg": "solarized.red" },
-		"exit_success":       { "fg": "solarized.base3", "bg": "solarized.green" }
+		"exit_success":       { "fg": "solarized.base3", "bg": "solarized.green" },
+		"environment":        { "fg": "solarized.base3", "bg": "solarized.green" }
 	}
 }
