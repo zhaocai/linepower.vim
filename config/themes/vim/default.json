@@ -42,6 +42,11 @@
 				"exclude_modes": ["nc"]
 			},
 			{
+				"name": "visual_range",
+				"exclude_modes": ["nc"],
+				"priority": 10
+			},
+			{
 				"name": "paste_indicator",
 				"exclude_modes": ["nc"],
 				"priority": 10
@@ -58,7 +63,7 @@
 			},
 			{
 				"name": "file_directory",
-				"priority": 20,
+				"priority": 40,
 				"draw_soft_divider": false 
 			},
 			{
@@ -92,7 +97,7 @@
 				"draw_soft_divider": false
 			},
 			{
-				"module" : "linepower.segments",
+				"module": "powerline.segments.plugin.syntastic",
 				"name": "syntastic",
 				"priority": 50,
 				"exclude_modes": ["nc"],

@@ -32,6 +32,8 @@ install_details: |
   http://zhaocai.github.io/linepower.vim/
 
 versions:
+- '1.4.0': |
+   - update config file to upstream (visual_range, syntastic, etc.)
 - '1.3.0': |
    - change default divider (it is not well aligned)
    - separate quickfix/locationlist local theme

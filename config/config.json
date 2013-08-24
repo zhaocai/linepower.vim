@@ -3,12 +3,12 @@
 		"term_truecolor": true,
 		"dividers": {
 			"left": {
-				"hard": "◆ ",
-				"soft": "⟫ "
+				"hard": " ",
+				"soft": " "
 			},
 			"right": {
-				"hard": " ◆",
-				"soft": " ⟪"
+				"hard": " ",
+				"soft": " "
 			}
 		},
 		"spaces": 1
@@ -35,16 +35,20 @@
 			"colorscheme": "default",
 			"theme": "default",
 			"local_themes": {
-				"cmdwin": "cmdwin",
-				"help": "help",
-				"linepower.matchers.previewwindow": "previewwindow",
-				"linepower.matchers.unite": "unite",
-				"linepower.matchers.tagbar": "tagbar",
-				"linepower.matchers.vimfiler": "vimfiler" ,
-				"linepower.matchers.vimshell": "vimshell" ,
-				"linepower.matchers.locationlist": "locationlist" ,
-                                "linepower.matchers.quickfix": "quickfix",
-                                "linepower.matchers.nerdtree": "nerdtree"
+				"cmdwin"                           : "cmdwin",
+				"help"                             : "help",
+				"powerline.matchers.plugin.nerdtree.nerdtree": "plugin/nerdtree",
+				"powerline.matchers.plugin.ctrlp.ctrlp": "plugin/ctrlp",
+				"powerline.matchers.plugin.gundo.gundo": "plugin/gundo",
+				"powerline.matchers.plugin.gundo.gundo_preview": "plugin/gundo-preview",
+				"linepower.matchers.previewwindow" : "previewwindow",
+				"linepower.matchers.unite"         : "unite",
+				"linepower.matchers.tagbar"        : "tagbar",
+				"linepower.matchers.vimfiler"      : "vimfiler" ,
+				"linepower.matchers.vimshell"      : "vimshell" ,
+				"linepower.matchers.locationlist"  : "locationlist" ,
+				"linepower.matchers.quickfix"      : "quickfix",
+				"linepower.matchers.nerdtree"      : "nerdtree"
 			}
 		},
 		"wm": {
