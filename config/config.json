@@ -48,7 +48,6 @@
 				"linepower.matchers.vimshell"      : "vimshell" ,
 				"linepower.matchers.locationlist"  : "locationlist" ,
 				"linepower.matchers.quickfix"      : "quickfix",
-				"linepower.matchers.nerdtree"      : "nerdtree"
 			}
 		},
 		"wm": {
