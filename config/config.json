@@ -47,7 +47,7 @@
 				"linepower.matchers.vimfiler"      : "vimfiler" ,
 				"linepower.matchers.vimshell"      : "vimshell" ,
 				"linepower.matchers.locationlist"  : "locationlist" ,
-				"linepower.matchers.quickfix"      : "quickfix",
+				"linepower.matchers.quickfix"      : "quickfix"
 			}
 		},
 		"wm": {
